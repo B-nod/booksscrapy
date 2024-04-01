@@ -7,7 +7,7 @@ from scrapy.loader import ItemLoader
 class EbookSpider(scrapy.Spider):
     name = "ebook"
 
-    start_urls = ['https://books.toscrape.com/catalogue/category/books/travel_2/']
+    start_urls = ['https://books.toscrape.com/catalogue/category/books/mystery_3/']
 
     def parse(self, response):
         print("[ parse ]")

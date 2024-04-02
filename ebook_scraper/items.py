@@ -1,16 +1,11 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 from scrapy import Item, Field
 from itemloaders.processors import MapCompose, TakeFirst
 
 def get_price(txt):
-    return float(txt.replace('£',''))
+    return float(txt.replace('£', '' ))
 
 def convert_to_dollar(pounds):
-    return pounds* 0.89
+    return pounds * 0.89
 
 class EbookItem(Item):
     
